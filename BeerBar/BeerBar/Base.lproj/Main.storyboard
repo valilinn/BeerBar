@@ -22,8 +22,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZ5-jW-hbx">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="72"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer Heaven" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bml-uC-4Iv">
-                                                <rect key="frame" x="114.00000000000001" y="16" width="165.33333333333337" height="40"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bar name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bml-uC-4Iv">
+                                                <rect key="frame" x="135.33333333333334" y="16" width="122.33333333333334" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Zha-P9-4Zh"/>
                                                 </constraints>
@@ -50,7 +50,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7BX-XX-Fpg">
                                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="36"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stella Artois" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKw-Dj-uVD">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKw-Dj-uVD">
                                                                         <rect key="frame" x="16" y="8" width="183" height="20"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="20" id="Y2d-54-zgo"/>
@@ -71,7 +71,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Or1-aB-iXx">
                                                                 <rect key="frame" x="0.0" y="36" width="207" height="34"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer left: 0.33 l" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vK7-HD-Vmw">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leftover beer: 0.33 l" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vK7-HD-Vmw">
                                                                         <rect key="frame" x="16" y="8" width="183" height="18"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="18" id="lGb-cD-iBP"/>
@@ -104,6 +104,9 @@
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0.33">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z1N-md-3cq"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -116,12 +119,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUu-aH-cKV">
                                                         <rect key="frame" x="265" y="0.0" width="58" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cj9-kC-8Nk">
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cj9-kC-8Nk">
                                                                 <rect key="frame" x="4" y="15" width="50" height="40"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0.5">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yls-LZ-c1h"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -134,12 +140,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7Z-LW-64d">
                                                         <rect key="frame" x="323" y="0.0" width="70" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jn2-ZI-8cA">
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jn2-ZI-8cA">
                                                                 <rect key="frame" x="4" y="15" width="50" height="40"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="1.0">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AyI-UB-8Ot"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -166,7 +175,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QiQ-6h-3C4">
                                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="36"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bud Light" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znh-bS-cnc">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znh-bS-cnc">
                                                                         <rect key="frame" x="16" y="8" width="183" height="20"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="20" id="W3k-m8-WFg"/>
@@ -187,7 +196,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q9T-XB-2h2">
                                                                 <rect key="frame" x="0.0" y="36" width="207" height="34"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer left: 0.33 l" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbc-tI-gWG">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leftover beer: 0.33 l" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbc-tI-gWG">
                                                                         <rect key="frame" x="16" y="8" width="183" height="18"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="18" id="3xh-UQ-I3d"/>
@@ -210,7 +219,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HCi-dg-yHH">
                                                         <rect key="frame" x="207" y="0.0" width="58" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nN1-rz-c6c">
+                                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nN1-rz-c6c">
                                                                 <rect key="frame" x="4" y="15" width="50" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="gFN-pY-Rg6"/>
@@ -220,6 +229,9 @@
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0.33">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qHH-wp-s3T"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -232,12 +244,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gjb-2J-pSk">
                                                         <rect key="frame" x="265" y="0.0" width="58" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDN-8o-Bmg">
+                                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDN-8o-Bmg">
                                                                 <rect key="frame" x="4" y="15" width="50" height="40"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0.5">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yd1-3v-abi"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -250,12 +265,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ca9-5U-jAQ">
                                                         <rect key="frame" x="323" y="0.0" width="70" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAD-00-1UB">
+                                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAD-00-1UB">
                                                                 <rect key="frame" x="4" y="15" width="50" height="40"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="1.0">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uh0-da-Lru"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -282,7 +300,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="owU-1H-qTg">
                                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="36"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corona Extra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fs-kE-GPl">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fs-kE-GPl">
                                                                         <rect key="frame" x="16" y="8" width="183" height="20"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="20" id="ptW-Mn-U3E"/>
@@ -303,7 +321,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nf-Lo-8SV">
                                                                 <rect key="frame" x="0.0" y="36" width="207" height="34"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer left: 0.33 l" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmx-je-YIZ">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leftover beer: 0.33 l" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmx-je-YIZ">
                                                                         <rect key="frame" x="16" y="8" width="183" height="18"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="18" id="a5U-Gl-GaG"/>
@@ -326,7 +344,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPj-gk-eap">
                                                         <rect key="frame" x="207" y="0.0" width="58" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghX-sl-Qsl">
+                                                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghX-sl-Qsl">
                                                                 <rect key="frame" x="4" y="15" width="50" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="BVp-pp-3Y9"/>
@@ -336,6 +354,9 @@
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0.33">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Lb-4h-JIx"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -348,12 +369,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZgB-wN-kxv">
                                                         <rect key="frame" x="265" y="0.0" width="58" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fe-8k-mxE">
+                                                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fe-8k-mxE">
                                                                 <rect key="frame" x="4" y="15" width="50" height="40"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0.5">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="paA-gh-RGD"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -366,12 +390,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M32-R7-ZJM">
                                                         <rect key="frame" x="323" y="0.0" width="70" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfB-tu-D7w">
+                                                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfB-tu-D7w">
                                                                 <rect key="frame" x="4" y="15" width="50" height="40"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="1.0">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XpM-T8-1bz"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -398,7 +425,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6EB-oa-M7j">
                                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="36"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heineken Lager" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBH-vP-WSK">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBH-vP-WSK">
                                                                         <rect key="frame" x="16" y="8" width="183" height="20"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="20" id="pfF-Dj-2Bs"/>
@@ -419,7 +446,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G4Q-OG-8Kw">
                                                                 <rect key="frame" x="0.0" y="36" width="207" height="34"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer left: 0.33 l" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKU-P2-9Ok">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leftover beer: 0.33 l" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKU-P2-9Ok">
                                                                         <rect key="frame" x="16" y="8" width="183" height="18"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="18" id="QPE-Nj-P7x"/>
@@ -442,7 +469,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I0H-C1-xMa">
                                                         <rect key="frame" x="207" y="0.0" width="58" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciy-sC-MOr">
+                                                            <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciy-sC-MOr">
                                                                 <rect key="frame" x="4" y="15" width="50" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="AzA-cK-fks"/>
@@ -452,6 +479,9 @@
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0.33">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HMy-dN-dog"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -464,12 +494,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TcC-rT-Gf0">
                                                         <rect key="frame" x="265" y="0.0" width="58" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggM-zr-k4o">
+                                                            <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggM-zr-k4o">
                                                                 <rect key="frame" x="4" y="15" width="50" height="40"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0.5">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S2O-DM-Gzh"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -482,12 +515,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uxw-qH-BIq">
                                                         <rect key="frame" x="323" y="0.0" width="70" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nS-1N-pGn">
+                                                            <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nS-1N-pGn">
                                                                 <rect key="frame" x="4" y="15" width="50" height="40"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="1.0">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sQw-Rc-ibO"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -514,7 +550,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Di0-XX-nvG">
                                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="36"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tyskie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgH-7U-zfE">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgH-7U-zfE">
                                                                         <rect key="frame" x="16" y="8" width="183" height="20"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="20" id="dzz-ht-u3r"/>
@@ -535,7 +571,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vVV-jM-oEA">
                                                                 <rect key="frame" x="0.0" y="36" width="207" height="34"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer left: 0.33 l" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpg-6c-78u">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leftover beer: 0.33 l" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpg-6c-78u">
                                                                         <rect key="frame" x="16" y="8" width="183" height="18"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="18" id="01H-pe-5It"/>
@@ -558,7 +594,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VGQ-wo-aZC">
                                                         <rect key="frame" x="207" y="0.0" width="58" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6l-Ki-pfs">
+                                                            <button opaque="NO" tag="40" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6l-Ki-pfs">
                                                                 <rect key="frame" x="4" y="15" width="50" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="bDt-l9-tU2"/>
@@ -568,6 +604,9 @@
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0.33">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H0L-y2-bQJ"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -580,12 +619,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGV-8l-Ff2">
                                                         <rect key="frame" x="265" y="0.0" width="58" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUV-hz-1BR">
+                                                            <button opaque="NO" tag="41" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUV-hz-1BR">
                                                                 <rect key="frame" x="4" y="15" width="50" height="40"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0.5">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxN-w4-oj8"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -598,12 +640,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QO7-rT-Fy2">
                                                         <rect key="frame" x="323" y="0.0" width="70" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbi-TG-PMN">
+                                                            <button opaque="NO" tag="42" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbi-TG-PMN">
                                                                 <rect key="frame" x="4" y="15" width="50" height="40"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="1.0">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vuH-xu-lWP"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -643,6 +688,9 @@
                                                         <rect key="frame" x="247" y="8" width="130" height="45"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Reset"/>
+                                                        <connections>
+                                                            <action selector="newResetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eif-fb-D1X"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -667,6 +715,9 @@
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="New shift"/>
+                                                        <connections>
+                                                            <action selector="newShiftAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YLO-RL-H30"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Revenue today: 0.00€" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="765-sV-zyB">
                                                         <rect key="frame" x="16" y="8" width="215" height="53"/>
@@ -711,113 +762,44 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3gv-kH-S96" secondAttribute="bottom" id="usX-1g-h7a"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="barName" destination="bml-uC-4Iv" id="PVy-1f-q9B"/>
+                        <outlet property="zeroButton" destination="QQe-LP-qC9" id="nfB-i1-6o0"/>
+                        <outletCollection property="volumeButtons" destination="AWr-rx-W1e" collectionClass="NSMutableArray" id="PXc-Jj-OmW"/>
+                        <outletCollection property="volumeButtons" destination="Cj9-kC-8Nk" collectionClass="NSMutableArray" id="9wS-Ag-DEz"/>
+                        <outletCollection property="volumeButtons" destination="Jn2-ZI-8cA" collectionClass="NSMutableArray" id="f6p-0l-b9G"/>
+                        <outletCollection property="volumeButtons" destination="nN1-rz-c6c" collectionClass="NSMutableArray" id="w1p-wg-4Lx"/>
+                        <outletCollection property="volumeButtons" destination="NDN-8o-Bmg" collectionClass="NSMutableArray" id="RMd-Jy-4LM"/>
+                        <outletCollection property="volumeButtons" destination="pAD-00-1UB" collectionClass="NSMutableArray" id="Zgv-RX-Aea"/>
+                        <outletCollection property="volumeButtons" destination="ghX-sl-Qsl" collectionClass="NSMutableArray" id="ND7-qm-b3Y"/>
+                        <outletCollection property="volumeButtons" destination="6Fe-8k-mxE" collectionClass="NSMutableArray" id="NIx-kV-qxB"/>
+                        <outletCollection property="volumeButtons" destination="FfB-tu-D7w" collectionClass="NSMutableArray" id="VIM-PF-ilv"/>
+                        <outletCollection property="volumeButtons" destination="ciy-sC-MOr" collectionClass="NSMutableArray" id="WFY-qP-f5S"/>
+                        <outletCollection property="volumeButtons" destination="ggM-zr-k4o" collectionClass="NSMutableArray" id="k3v-rP-SPk"/>
+                        <outletCollection property="volumeButtons" destination="5nS-1N-pGn" collectionClass="NSMutableArray" id="Lbo-kl-QOH"/>
+                        <outletCollection property="volumeButtons" destination="J6l-Ki-pfs" collectionClass="NSMutableArray" id="Df1-i5-4R7"/>
+                        <outletCollection property="volumeButtons" destination="PUV-hz-1BR" collectionClass="NSMutableArray" id="hkc-de-VLw"/>
+                        <outletCollection property="volumeButtons" destination="Nbi-TG-PMN" collectionClass="NSMutableArray" id="oq1-bO-dQH"/>
+                        <outletCollection property="beerNames" destination="QKw-Dj-uVD" collectionClass="NSMutableArray" id="uVT-mv-jTv"/>
+                        <outletCollection property="beerNames" destination="Znh-bS-cnc" collectionClass="NSMutableArray" id="bpm-9U-2Ec"/>
+                        <outletCollection property="beerNames" destination="1Fs-kE-GPl" collectionClass="NSMutableArray" id="ww7-rW-2Al"/>
+                        <outletCollection property="beerNames" destination="rBH-vP-WSK" collectionClass="NSMutableArray" id="8vH-qN-naL"/>
+                        <outletCollection property="beerNames" destination="fgH-7U-zfE" collectionClass="NSMutableArray" id="LXP-rC-noT"/>
+                        <outletCollection property="leftoverBeer" destination="vK7-HD-Vmw" collectionClass="NSMutableArray" id="uGH-qb-OHI"/>
+                        <outletCollection property="leftoverBeer" destination="fbc-tI-gWG" collectionClass="NSMutableArray" id="wjD-Mr-DAo"/>
+                        <outletCollection property="leftoverBeer" destination="Jmx-je-YIZ" collectionClass="NSMutableArray" id="svo-bs-5QW"/>
+                        <outletCollection property="leftoverBeer" destination="qKU-P2-9Ok" collectionClass="NSMutableArray" id="h6C-MM-S58"/>
+                        <outletCollection property="leftoverBeer" destination="Rpg-6c-78u" collectionClass="NSMutableArray" id="SBi-iD-ekK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="116.79389312977099" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="uov-7F-StQ">
-            <objects>
-                <viewController id="QK2-lm-uan" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="y1I-hV-kYA">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qcY-fd-6kw">
-                                <rect key="frame" x="0.0" y="672" width="393" height="146"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnG-1L-Kra">
-                                        <rect key="frame" x="0.0" y="77" width="393" height="69"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total revenue: 0.00€" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDR-6m-DTe">
-                                                <rect key="frame" x="16" y="8" width="215" height="45"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60S-kW-gbW">
-                                                <rect key="frame" x="247" y="8" width="130" height="45"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Reset"/>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="60S-kW-gbW" secondAttribute="bottom" constant="16" id="98l-DA-xxH"/>
-                                            <constraint firstItem="PDR-6m-DTe" firstAttribute="top" secondItem="bnG-1L-Kra" secondAttribute="top" constant="8" id="GZr-Nw-dz0"/>
-                                            <constraint firstItem="PDR-6m-DTe" firstAttribute="leading" secondItem="bnG-1L-Kra" secondAttribute="leading" constant="16" id="Hc1-UI-JC4"/>
-                                            <constraint firstItem="60S-kW-gbW" firstAttribute="top" secondItem="bnG-1L-Kra" secondAttribute="top" constant="8" id="fgY-M4-LDH"/>
-                                            <constraint firstAttribute="bottom" secondItem="PDR-6m-DTe" secondAttribute="bottom" constant="16" id="iSA-1f-7CT"/>
-                                            <constraint firstItem="60S-kW-gbW" firstAttribute="leading" secondItem="PDR-6m-DTe" secondAttribute="trailing" constant="16" id="rdo-6p-QNb"/>
-                                            <constraint firstAttribute="trailing" secondItem="60S-kW-gbW" secondAttribute="trailing" constant="16" id="uBJ-dN-58h"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLp-re-Ysy">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="69"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgZ-cO-tPQ">
-                                                <rect key="frame" x="247" y="8" width="130" height="45"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="130" id="DPJ-04-lIC"/>
-                                                    <constraint firstAttribute="height" constant="45" id="dgk-aD-ETe"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="New shift"/>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Revenue today: 0.00€" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9w-zy-CsN">
-                                                <rect key="frame" x="16" y="8" width="215" height="53"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="g9w-zy-CsN" secondAttribute="bottom" constant="8" id="2AC-X0-5ag"/>
-                                            <constraint firstItem="g9w-zy-CsN" firstAttribute="top" secondItem="RLp-re-Ysy" secondAttribute="top" constant="8" id="6U5-Of-UCJ"/>
-                                            <constraint firstAttribute="trailing" secondItem="NgZ-cO-tPQ" secondAttribute="trailing" constant="16" id="HVU-ul-Ine"/>
-                                            <constraint firstItem="NgZ-cO-tPQ" firstAttribute="leading" secondItem="g9w-zy-CsN" secondAttribute="trailing" constant="16" id="K5h-dS-yXT"/>
-                                            <constraint firstItem="g9w-zy-CsN" firstAttribute="leading" secondItem="RLp-re-Ysy" secondAttribute="leading" constant="16" id="vwT-CB-Zwa"/>
-                                            <constraint firstItem="NgZ-cO-tPQ" firstAttribute="top" secondItem="RLp-re-Ysy" secondAttribute="top" constant="8" id="yq4-hy-X0x"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <constraints>
-                                    <constraint firstItem="bnG-1L-Kra" firstAttribute="leading" secondItem="qcY-fd-6kw" secondAttribute="leading" id="3g1-94-bC8"/>
-                                    <constraint firstItem="RLp-re-Ysy" firstAttribute="leading" secondItem="qcY-fd-6kw" secondAttribute="leading" id="9jS-ds-mQi"/>
-                                    <constraint firstItem="NgZ-cO-tPQ" firstAttribute="height" secondItem="60S-kW-gbW" secondAttribute="height" id="Cjr-lV-0dF"/>
-                                    <constraint firstAttribute="trailing" secondItem="bnG-1L-Kra" secondAttribute="trailing" id="UZE-Hm-JnP"/>
-                                    <constraint firstItem="bnG-1L-Kra" firstAttribute="top" secondItem="RLp-re-Ysy" secondAttribute="bottom" constant="8" symbolic="YES" id="VaD-gG-r5K"/>
-                                    <constraint firstAttribute="trailing" secondItem="RLp-re-Ysy" secondAttribute="trailing" id="WCR-kR-x4B"/>
-                                    <constraint firstItem="RLp-re-Ysy" firstAttribute="top" secondItem="qcY-fd-6kw" secondAttribute="top" id="anx-mQ-5n8"/>
-                                    <constraint firstItem="RLp-re-Ysy" firstAttribute="height" secondItem="bnG-1L-Kra" secondAttribute="height" id="fDt-ip-iYe"/>
-                                    <constraint firstItem="NgZ-cO-tPQ" firstAttribute="width" secondItem="60S-kW-gbW" secondAttribute="width" id="mry-xn-CSQ"/>
-                                    <constraint firstAttribute="bottom" secondItem="bnG-1L-Kra" secondAttribute="bottom" id="xXi-xz-eSX"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="jym-1o-2M9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="qcY-fd-6kw" firstAttribute="leading" secondItem="jym-1o-2M9" secondAttribute="leading" id="VtU-yG-EjU"/>
-                            <constraint firstItem="qcY-fd-6kw" firstAttribute="trailing" secondItem="jym-1o-2M9" secondAttribute="trailing" id="gs7-pb-ViR"/>
-                            <constraint firstItem="qcY-fd-6kw" firstAttribute="bottom" secondItem="jym-1o-2M9" secondAttribute="bottom" id="ylF-jd-hn5"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tqn-Lb-HRX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="857.25190839694653" y="6.3380281690140849"/>
-        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

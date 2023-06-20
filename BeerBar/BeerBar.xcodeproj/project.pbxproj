@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		EA4341CA2A3DD40100AAB487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4341C92A3DD40100AAB487 /* AppDelegate.swift */; };
 		EA4341CC2A3DD40100AAB487 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4341CB2A3DD40100AAB487 /* SceneDelegate.swift */; };
-		EA4341CE2A3DD40100AAB487 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4341CD2A3DD40100AAB487 /* ViewController.swift */; };
+		EA4341CE2A3DD40100AAB487 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4341CD2A3DD40100AAB487 /* MenuViewController.swift */; };
 		EA4341D12A3DD40100AAB487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4341CF2A3DD40100AAB487 /* Main.storyboard */; };
 		EA4341D32A3DD40300AAB487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA4341D22A3DD40300AAB487 /* Assets.xcassets */; };
 		EA4341D62A3DD40300AAB487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4341D42A3DD40300AAB487 /* LaunchScreen.storyboard */; };
+		EA72A7DB2A41FA7300970169 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA72A7DA2A41FA7300970169 /* SettingsViewController.swift */; };
+		EA72A7DD2A4212B600970169 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA72A7DC2A4212B600970169 /* ModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA4341C62A3DD40100AAB487 /* BeerBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4341C92A3DD40100AAB487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA4341CB2A3DD40100AAB487 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA4341CD2A3DD40100AAB487 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA4341CD2A3DD40100AAB487 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		EA4341D02A3DD40100AAB487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA4341D22A3DD40300AAB487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA4341D52A3DD40300AAB487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA4341D72A3DD40300AAB487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA72A7DA2A41FA7300970169 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EA72A7DC2A4212B600970169 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				EA4341C92A3DD40100AAB487 /* AppDelegate.swift */,
 				EA4341CB2A3DD40100AAB487 /* SceneDelegate.swift */,
-				EA4341CD2A3DD40100AAB487 /* ViewController.swift */,
+				EA4341CD2A3DD40100AAB487 /* MenuViewController.swift */,
+				EA72A7DA2A41FA7300970169 /* SettingsViewController.swift */,
+				EA72A7DC2A4212B600970169 /* ModalViewController.swift */,
 				EA4341CF2A3DD40100AAB487 /* Main.storyboard */,
 				EA4341D22A3DD40300AAB487 /* Assets.xcassets */,
 				EA4341D42A3DD40300AAB487 /* LaunchScreen.storyboard */,
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA4341CE2A3DD40100AAB487 /* ViewController.swift in Sources */,
+				EA4341CE2A3DD40100AAB487 /* MenuViewController.swift in Sources */,
+				EA72A7DD2A4212B600970169 /* ModalViewController.swift in Sources */,
 				EA4341CA2A3DD40100AAB487 /* AppDelegate.swift in Sources */,
 				EA4341CC2A3DD40100AAB487 /* SceneDelegate.swift in Sources */,
+				EA72A7DB2A41FA7300970169 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

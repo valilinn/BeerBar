@@ -11,24 +11,19 @@ import MessageUI
 
 class ModalViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
-    
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
 
     }
     
 
-    @IBAction func email(_ sender: Any) {
-      
+   
+    @IBAction func telegram(_ sender: Any) {
         if let url = URL(string: "https://t.me/valinchuk") {
             UIApplication.shared.open(url)
         }
-        
     }
     
     

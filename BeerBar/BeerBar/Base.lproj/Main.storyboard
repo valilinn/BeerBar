@@ -8,6 +8,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Item-->
+        <scene sceneID="NRF-Um-Tmz">
+            <objects>
+                <navigationController id="lML-mp-dX8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="y7A-ny-qCm"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="NrU-EM-c8t">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xXm-Ee-TqG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uPM-az-p5y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-596" y="-273"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="b7Z-NV-ktO">
             <objects>
@@ -18,13 +35,13 @@
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="LvA-q9-l8Z"/>
+                        <segue destination="lML-mp-dX8" kind="relationship" relationship="viewControllers" id="3h7-56-yBi"/>
                         <segue destination="9Mn-9r-0Wd" kind="relationship" relationship="viewControllers" id="u8q-3T-PUT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJh-9w-omb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-666" y="77"/>
+            <point key="canvasLocation" x="-1373" y="213"/>
         </scene>
         <!--Menu-->
         <scene sceneID="tne-QT-ifu">
@@ -35,7 +52,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3gv-kH-S96">
-                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <rect key="frame" x="0.0" y="155" width="393" height="614"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZ5-jW-hbx">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="72"/>
@@ -57,7 +74,7 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Amk-mB-GNz" userLabel="Stack View-list">
-                                        <rect key="frame" x="0.0" y="72" width="393" height="638"/>
+                                        <rect key="frame" x="0.0" y="72" width="393" height="542"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3r-If-BBz">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
@@ -685,7 +702,7 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cX0-1w-dMv">
-                                                <rect key="frame" x="0.0" y="350" width="393" height="288"/>
+                                                <rect key="frame" x="0.0" y="350" width="393" height="192"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                         </subviews>
@@ -703,6 +720,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Menu" image="menucard" catalog="system" id="Jlk-SA-nyn"/>
+                    <navigationItem key="navigationItem" id="x7g-S4-CQF"/>
                     <connections>
                         <outlet property="barName" destination="bml-uC-4Iv" id="PVy-1f-q9B"/>
                         <outletCollection property="volumeButtons" destination="AWr-rx-W1e" collectionClass="NSMutableArray" id="PXc-Jj-OmW"/>
@@ -866,7 +884,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yMu-IG-P9L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116.79389312977099" y="450.7042253521127"/>
+            <point key="canvasLocation" x="-596" y="406"/>
         </scene>
         <!--Modal View Controller-->
         <scene sceneID="6mK-g6-chH">
@@ -960,7 +978,7 @@
                                                         <rect key="frame" x="8" y="8" width="94.666666666666671" height="75.666666666666671"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Telegram"/>
                                                         <connections>
-                                                            <action selector="email:" destination="b21-0C-zTp" eventType="touchUpInside" id="1xD-f0-M3I"/>
+                                                            <action selector="telegram:" destination="b21-0C-zTp" eventType="touchUpInside" id="PTi-7W-q2k"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1015,7 +1033,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DU3-IM-sJ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="864.8854961832061" y="450.7042253521127"/>
+            <point key="canvasLocation" x="105" y="406"/>
         </scene>
     </scenes>
     <resources>

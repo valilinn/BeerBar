@@ -896,53 +896,108 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vxY-GN-cHN" userLabel="Name">
-                                        <rect key="frame" x="0.0" y="350" width="393" height="66.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="350" width="393" height="82"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valentyna Linchuk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2i-zL-LtA">
-                                                <rect key="frame" x="0.0" y="15.999999999999996" width="393" height="34.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="16" width="393" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="r7J-WA-V7P"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="82" id="7Ye-4u-6Ea"/>
+                                            <constraint firstItem="q2i-zL-LtA" firstAttribute="centerX" secondItem="vxY-GN-cHN" secondAttribute="centerX" id="FCF-Tu-spd"/>
                                             <constraint firstAttribute="bottom" secondItem="q2i-zL-LtA" secondAttribute="bottom" constant="16" id="FUn-f0-IBB"/>
+                                            <constraint firstItem="q2i-zL-LtA" firstAttribute="centerY" secondItem="vxY-GN-cHN" secondAttribute="centerY" id="IkA-Lf-TUb"/>
                                             <constraint firstItem="q2i-zL-LtA" firstAttribute="top" secondItem="vxY-GN-cHN" secondAttribute="top" constant="16" id="Js3-sp-goU"/>
                                             <constraint firstItem="q2i-zL-LtA" firstAttribute="leading" secondItem="vxY-GN-cHN" secondAttribute="leading" id="VDB-b5-adm"/>
-                                            <constraint firstAttribute="trailing" secondItem="q2i-zL-LtA" secondAttribute="trailing" id="efk-4a-gXy"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkn-34-TLX">
-                                        <rect key="frame" x="0.0" y="416.66666666666674" width="393" height="425.33333333333326"/>
+                                        <rect key="frame" x="0.0" y="432" width="393" height="150"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telegram: https://t.me/valinchuk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXQ-eH-QzZ">
-                                                <rect key="frame" x="0.0" y="44.333333333333314" width="393" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: valentinalinchuk@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BK3-aw-DhG">
-                                                <rect key="frame" x="0.0" y="15" width="393" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqa-dc-Ke4">
+                                                <rect key="frame" x="8" y="8" width="94" height="142"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telegram" translatesAutoresizingMaskIntoConstraints="NO" id="vAa-lX-Tgp">
+                                                        <rect key="frame" x="32" y="16" width="54" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="54" id="Dcz-e0-cMY"/>
+                                                            <constraint firstAttribute="height" constant="50" id="G2F-RX-M6Z"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="B6J-vw-b9N">
+                                                        <rect key="frame" x="16" y="74" width="70" height="52"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="142" id="0Nc-5e-0uf"/>
+                                                    <constraint firstItem="B6J-vw-b9N" firstAttribute="top" secondItem="vAa-lX-Tgp" secondAttribute="bottom" constant="8" id="4Mm-ux-JWV"/>
+                                                    <constraint firstAttribute="bottom" secondItem="B6J-vw-b9N" secondAttribute="bottom" constant="16" id="Hkv-rY-KmG"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vAa-lX-Tgp" secondAttribute="trailing" constant="8" id="Q1D-2q-MEH"/>
+                                                    <constraint firstItem="vAa-lX-Tgp" firstAttribute="leading" secondItem="eqa-dc-Ke4" secondAttribute="leading" constant="32" id="XzY-Jm-KSI"/>
+                                                    <constraint firstAttribute="trailing" secondItem="B6J-vw-b9N" secondAttribute="trailing" constant="8" id="edG-Tl-FOG"/>
+                                                    <constraint firstItem="vAa-lX-Tgp" firstAttribute="top" secondItem="eqa-dc-Ke4" secondAttribute="top" constant="16" id="lmF-a0-VUP"/>
+                                                    <constraint firstItem="B6J-vw-b9N" firstAttribute="leading" secondItem="eqa-dc-Ke4" secondAttribute="leading" constant="16" id="tfM-HY-cg8"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCx-km-jx9">
+                                                <rect key="frame" x="110" y="8" width="275" height="142"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTZ-ab-AwB">
+                                                        <rect key="frame" x="8" y="91.666666666666629" width="239.66666666666666" height="34.333333333333343"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="valentinalinchuk@gmail.com"/>
+                                                        <connections>
+                                                            <action selector="reallyEmail:" destination="b21-0C-zTp" eventType="touchUpInside" id="q51-6P-yLk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBi-ru-9wl">
+                                                        <rect key="frame" x="8" y="8" width="94.666666666666671" height="75.666666666666671"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Telegram"/>
+                                                        <connections>
+                                                            <action selector="email:" destination="b21-0C-zTp" eventType="touchUpInside" id="1xD-f0-M3I"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="WTZ-ab-AwB" firstAttribute="leading" secondItem="gCx-km-jx9" secondAttribute="leadingMargin" id="DWF-l0-PwF"/>
+                                                    <constraint firstItem="WTZ-ab-AwB" firstAttribute="leading" secondItem="gCx-km-jx9" secondAttribute="leading" constant="8" id="K8l-hY-FpZ"/>
+                                                    <constraint firstItem="dBi-ru-9wl" firstAttribute="top" secondItem="gCx-km-jx9" secondAttribute="top" constant="8" id="NEy-Pp-cdf"/>
+                                                    <constraint firstItem="WTZ-ab-AwB" firstAttribute="top" secondItem="dBi-ru-9wl" secondAttribute="bottom" constant="8" id="PWF-Qd-1Yo"/>
+                                                    <constraint firstAttribute="height" constant="142" id="QsS-Y4-hQP"/>
+                                                    <constraint firstItem="dBi-ru-9wl" firstAttribute="leading" secondItem="gCx-km-jx9" secondAttribute="leading" constant="8" id="aWG-M9-aty"/>
+                                                    <constraint firstAttribute="bottom" secondItem="WTZ-ab-AwB" secondAttribute="bottom" constant="16.000000000000028" id="hNm-dq-CHI"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="BK3-aw-DhG" firstAttribute="leading" secondItem="hkn-34-TLX" secondAttribute="leading" id="4JA-iX-4yd"/>
-                                            <constraint firstItem="fXQ-eH-QzZ" firstAttribute="leading" secondItem="hkn-34-TLX" secondAttribute="leading" id="CEa-hl-Qyb"/>
-                                            <constraint firstItem="fXQ-eH-QzZ" firstAttribute="top" secondItem="BK3-aw-DhG" secondAttribute="bottom" constant="8" id="Fbf-U5-MeL"/>
-                                            <constraint firstItem="fXQ-eH-QzZ" firstAttribute="top" secondItem="BK3-aw-DhG" secondAttribute="bottom" constant="8" id="Tjp-xP-e9Q"/>
-                                            <constraint firstItem="BK3-aw-DhG" firstAttribute="centerX" secondItem="hkn-34-TLX" secondAttribute="centerX" id="b3J-xY-CmK"/>
-                                            <constraint firstItem="BK3-aw-DhG" firstAttribute="top" secondItem="hkn-34-TLX" secondAttribute="top" constant="16" id="bmg-fm-znH"/>
-                                            <constraint firstItem="fXQ-eH-QzZ" firstAttribute="centerX" secondItem="hkn-34-TLX" secondAttribute="centerX" id="qm0-NI-It0"/>
+                                            <constraint firstAttribute="bottom" secondItem="eqa-dc-Ke4" secondAttribute="bottom" id="Dmd-Pm-1zL"/>
+                                            <constraint firstAttribute="trailing" secondItem="gCx-km-jx9" secondAttribute="trailing" constant="8" id="Iuv-rV-hic"/>
+                                            <constraint firstItem="eqa-dc-Ke4" firstAttribute="leading" secondItem="hkn-34-TLX" secondAttribute="leading" constant="8" id="Me2-k7-ylY"/>
+                                            <constraint firstItem="eqa-dc-Ke4" firstAttribute="bottom" secondItem="gCx-km-jx9" secondAttribute="bottom" id="Pmx-0z-tF8"/>
+                                            <constraint firstItem="gCx-km-jx9" firstAttribute="top" secondItem="hkn-34-TLX" secondAttribute="top" constant="8" id="RQw-ye-Hh8"/>
+                                            <constraint firstItem="gCx-km-jx9" firstAttribute="leading" secondItem="eqa-dc-Ke4" secondAttribute="trailing" constant="8" id="Wex-rN-7bt"/>
+                                            <constraint firstAttribute="height" constant="150" id="gqm-24-gWX"/>
+                                            <constraint firstItem="eqa-dc-Ke4" firstAttribute="top" secondItem="hkn-34-TLX" secondAttribute="top" constant="8" id="kvJ-tj-iOG"/>
                                         </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kWT-NX-RpL">
+                                        <rect key="frame" x="0.0" y="582" width="393" height="260"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="kWT-NX-RpL" secondAttribute="bottom" id="B2U-YA-zym"/>
+                                    <constraint firstItem="kWT-NX-RpL" firstAttribute="top" secondItem="hkn-34-TLX" secondAttribute="bottom" id="DzD-nn-sTn"/>
                                     <constraint firstItem="hkn-34-TLX" firstAttribute="top" secondItem="vxY-GN-cHN" secondAttribute="bottom" id="HeQ-3L-vsB"/>
-                                    <constraint firstAttribute="bottom" secondItem="hkn-34-TLX" secondAttribute="bottom" id="b6V-ch-qpg"/>
                                     <constraint firstItem="hkn-34-TLX" firstAttribute="leading" secondItem="p5n-h1-Ut4" secondAttribute="leading" id="bwJ-WL-Svk"/>
+                                    <constraint firstItem="kWT-NX-RpL" firstAttribute="leading" secondItem="p5n-h1-Ut4" secondAttribute="leading" id="nBU-7b-8K9"/>
+                                    <constraint firstItem="q2i-zL-LtA" firstAttribute="top" secondItem="Adx-4g-rzb" secondAttribute="bottom" constant="16" id="s8C-qr-nRy"/>
                                     <constraint firstAttribute="trailing" secondItem="hkn-34-TLX" secondAttribute="trailing" id="uC4-s4-slS"/>
                                 </constraints>
                             </stackView>
@@ -964,9 +1019,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="email" width="512" height="383"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="menucard" catalog="system" width="108" height="128"/>
         <image name="photo" width="3024" height="3024"/>
+        <image name="telegram" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

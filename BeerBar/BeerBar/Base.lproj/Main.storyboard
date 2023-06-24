@@ -43,7 +43,7 @@
             </objects>
             <point key="canvasLocation" x="-1373" y="213"/>
         </scene>
-        <!--Menu-->
+        <!--Beer Heaven-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="BeerBar" customModuleProvider="target" sceneMemberID="viewController">
@@ -51,30 +51,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3gv-kH-S96">
-                                <rect key="frame" x="0.0" y="155" width="393" height="614"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0r-cD-OVX">
+                                <rect key="frame" x="0.0" y="155" width="393" height="697"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZ5-jW-hbx">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="72"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bar name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bml-uC-4Iv">
-                                                <rect key="frame" x="135.33333333333334" y="16" width="122.33333333333334" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="Zha-P9-4Zh"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="bml-uC-4Iv" firstAttribute="centerX" secondItem="dZ5-jW-hbx" secondAttribute="centerX" id="Jas-tm-ybl"/>
-                                            <constraint firstItem="bml-uC-4Iv" firstAttribute="top" secondItem="dZ5-jW-hbx" secondAttribute="top" constant="16" id="LMi-fI-C1V"/>
-                                            <constraint firstAttribute="bottom" secondItem="bml-uC-4Iv" secondAttribute="bottom" constant="16" id="tUE-M7-mSG"/>
-                                        </constraints>
-                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Amk-mB-GNz" userLabel="Stack View-list">
-                                        <rect key="frame" x="0.0" y="72" width="393" height="542"/>
+                                        <rect key="frame" x="0.0" y="10" width="393" height="820"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3r-If-BBz">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
@@ -701,58 +682,213 @@
                                                     <constraint firstItem="J6l-Ki-pfs" firstAttribute="height" secondItem="PUV-hz-1BR" secondAttribute="height" id="jWD-HT-UAy"/>
                                                 </constraints>
                                             </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DfA-6F-LRy">
+                                                <rect key="frame" x="0.0" y="350" width="393" height="70"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="S0k-kQ-UeI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="70"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TlQ-bj-mzp">
+                                                                <rect key="frame" x="0.0" y="0.0" width="207" height="36"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgK-LR-PcR">
+                                                                        <rect key="frame" x="16" y="8" width="183" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="20" id="a9m-wm-WHc"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="bgK-LR-PcR" secondAttribute="trailing" constant="8" id="AHj-IN-T7h"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="bgK-LR-PcR" secondAttribute="bottom" constant="8" id="Dv3-CT-Qxp"/>
+                                                                    <constraint firstItem="bgK-LR-PcR" firstAttribute="top" secondItem="TlQ-bj-mzp" secondAttribute="top" constant="8" id="T47-aj-pzJ"/>
+                                                                    <constraint firstItem="bgK-LR-PcR" firstAttribute="leading" secondItem="TlQ-bj-mzp" secondAttribute="leading" constant="16" id="YIl-Rd-qoZ"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzC-lK-FEb">
+                                                                <rect key="frame" x="0.0" y="36" width="207" height="34"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leftover beer: 0.33 l" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4j-Ok-brl">
+                                                                        <rect key="frame" x="16" y="8" width="183" height="18"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="18" id="4Ry-sg-kDh"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="c4j-Ok-brl" secondAttribute="trailing" constant="8" id="37x-ox-2fD"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="c4j-Ok-brl" secondAttribute="bottom" constant="8" id="8UZ-Hd-dgY"/>
+                                                                    <constraint firstItem="c4j-Ok-brl" firstAttribute="top" secondItem="hzC-lK-FEb" secondAttribute="top" constant="8" id="DUn-P0-Yqn"/>
+                                                                    <constraint firstItem="c4j-Ok-brl" firstAttribute="leading" secondItem="hzC-lK-FEb" secondAttribute="leading" constant="16" id="yrZ-gb-uba"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOC-XM-gum">
+                                                        <rect key="frame" x="207" y="0.0" width="58" height="70"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="40" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fd-t8-MgQ">
+                                                                <rect key="frame" x="4" y="15" width="50" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="0Kh-WF-R3w"/>
+                                                                    <constraint firstAttribute="width" constant="50" id="Fgj-w1-qxk"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="tinted" title="0.33">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9HI-un-VoP"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="9fd-t8-MgQ" secondAttribute="trailing" constant="4" id="bZK-0b-04A"/>
+                                                            <constraint firstItem="9fd-t8-MgQ" firstAttribute="leading" secondItem="bOC-XM-gum" secondAttribute="leading" constant="4" id="fEn-oa-7wF"/>
+                                                            <constraint firstItem="9fd-t8-MgQ" firstAttribute="centerY" secondItem="bOC-XM-gum" secondAttribute="centerY" id="oXk-lP-hN7"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGV-Pw-T6i">
+                                                        <rect key="frame" x="265" y="0.0" width="58" height="70"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="41" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjp-Hf-wAA">
+                                                                <rect key="frame" x="4" y="15" width="50" height="40"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="tinted" title="0.5">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qco-3l-syn"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Sjp-Hf-wAA" firstAttribute="leading" secondItem="TGV-Pw-T6i" secondAttribute="leading" constant="4" id="TIP-Hf-E31"/>
+                                                            <constraint firstItem="Sjp-Hf-wAA" firstAttribute="centerY" secondItem="TGV-Pw-T6i" secondAttribute="centerY" id="dph-b8-rAF"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Sjp-Hf-wAA" secondAttribute="trailing" constant="4" id="enY-he-gwp"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Sr-L7-fgU">
+                                                        <rect key="frame" x="323" y="0.0" width="70" height="70"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="42" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSI-Qy-ej2">
+                                                                <rect key="frame" x="4" y="15" width="50" height="40"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="tinted" title="1.0">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qgy-6W-lu5"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="fSI-Qy-ej2" secondAttribute="trailing" constant="16" id="1ol-td-HJM"/>
+                                                            <constraint firstItem="fSI-Qy-ej2" firstAttribute="leading" secondItem="4Sr-L7-fgU" secondAttribute="leading" constant="4" id="6uW-KL-jaB"/>
+                                                            <constraint firstItem="fSI-Qy-ej2" firstAttribute="centerY" secondItem="4Sr-L7-fgU" secondAttribute="centerY" id="fPC-sO-XCT"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Sjp-Hf-wAA" firstAttribute="height" secondItem="fSI-Qy-ej2" secondAttribute="height" id="5Fm-Q7-xCh"/>
+                                                    <constraint firstItem="Sjp-Hf-wAA" firstAttribute="width" secondItem="fSI-Qy-ej2" secondAttribute="width" id="KP8-GV-g8M"/>
+                                                    <constraint firstItem="9fd-t8-MgQ" firstAttribute="height" secondItem="Sjp-Hf-wAA" secondAttribute="height" id="fe8-Ke-XkD"/>
+                                                    <constraint firstItem="9fd-t8-MgQ" firstAttribute="width" secondItem="Sjp-Hf-wAA" secondAttribute="width" id="rda-Lf-5Tc"/>
+                                                </constraints>
+                                            </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cX0-1w-dMv">
-                                                <rect key="frame" x="0.0" y="350" width="393" height="192"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <rect key="frame" x="0.0" y="420" width="393" height="400"/>
+                                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="rSp-g0-a52"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                            </stackView>
+                                <constraints>
+                                    <constraint firstItem="Amk-mB-GNz" firstAttribute="top" secondItem="Y0r-cD-OVX" secondAttribute="top" constant="10" id="58b-8g-npW"/>
+                                    <constraint firstItem="Amk-mB-GNz" firstAttribute="width" secondItem="Y0r-cD-OVX" secondAttribute="width" id="Iv2-Ed-1xL"/>
+                                    <constraint firstAttribute="bottom" secondItem="Amk-mB-GNz" secondAttribute="bottom" constant="10" id="fsE-Pm-Z5b"/>
+                                    <constraint firstItem="Amk-mB-GNz" firstAttribute="leading" secondItem="Y0r-cD-OVX" secondAttribute="leading" id="jdx-0Q-AJV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Amk-mB-GNz" secondAttribute="trailing" id="ucl-ef-Ch2"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3gv-kH-S96" secondAttribute="trailing" id="33m-78-myo"/>
-                            <constraint firstItem="3gv-kH-S96" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EEw-DL-ypQ"/>
-                            <constraint firstItem="3gv-kH-S96" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ugJ-g5-VZo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3gv-kH-S96" secondAttribute="bottom" id="usX-1g-h7a"/>
+                            <constraint firstItem="Y0r-cD-OVX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ASy-SM-wkW"/>
+                            <constraint firstAttribute="bottom" secondItem="Y0r-cD-OVX" secondAttribute="bottom" id="CTD-dw-IR6"/>
+                            <constraint firstItem="Y0r-cD-OVX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NMP-xk-vjJ"/>
+                            <constraint firstItem="Y0r-cD-OVX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qIj-7y-SGB"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Menu" image="menucard" catalog="system" id="Jlk-SA-nyn"/>
-                    <navigationItem key="navigationItem" id="x7g-S4-CQF"/>
+                    <navigationItem key="navigationItem" title="Beer Heaven" id="x7g-S4-CQF"/>
                     <connections>
-                        <outlet property="barName" destination="bml-uC-4Iv" id="PVy-1f-q9B"/>
-                        <outletCollection property="volumeButtons" destination="AWr-rx-W1e" collectionClass="NSMutableArray" id="PXc-Jj-OmW"/>
-                        <outletCollection property="volumeButtons" destination="Cj9-kC-8Nk" collectionClass="NSMutableArray" id="9wS-Ag-DEz"/>
-                        <outletCollection property="volumeButtons" destination="Jn2-ZI-8cA" collectionClass="NSMutableArray" id="f6p-0l-b9G"/>
-                        <outletCollection property="volumeButtons" destination="nN1-rz-c6c" collectionClass="NSMutableArray" id="w1p-wg-4Lx"/>
-                        <outletCollection property="volumeButtons" destination="NDN-8o-Bmg" collectionClass="NSMutableArray" id="RMd-Jy-4LM"/>
-                        <outletCollection property="volumeButtons" destination="pAD-00-1UB" collectionClass="NSMutableArray" id="Zgv-RX-Aea"/>
-                        <outletCollection property="volumeButtons" destination="ghX-sl-Qsl" collectionClass="NSMutableArray" id="ND7-qm-b3Y"/>
-                        <outletCollection property="volumeButtons" destination="6Fe-8k-mxE" collectionClass="NSMutableArray" id="NIx-kV-qxB"/>
-                        <outletCollection property="volumeButtons" destination="FfB-tu-D7w" collectionClass="NSMutableArray" id="VIM-PF-ilv"/>
-                        <outletCollection property="volumeButtons" destination="ciy-sC-MOr" collectionClass="NSMutableArray" id="WFY-qP-f5S"/>
+                        <outletCollection property="leftoverBeer" destination="vK7-HD-Vmw" collectionClass="NSMutableArray" id="uGH-qb-OHI"/>
                         <outletCollection property="volumeButtons" destination="ggM-zr-k4o" collectionClass="NSMutableArray" id="k3v-rP-SPk"/>
+                        <outletCollection property="leftoverBeer" destination="qKU-P2-9Ok" collectionClass="NSMutableArray" id="h6C-MM-S58"/>
+                        <outletCollection property="beerNames" destination="QKw-Dj-uVD" collectionClass="NSMutableArray" id="uVT-mv-jTv"/>
+                        <outletCollection property="beerNames" destination="fgH-7U-zfE" collectionClass="NSMutableArray" id="LXP-rC-noT"/>
+                        <outletCollection property="volumeButtons" destination="nN1-rz-c6c" collectionClass="NSMutableArray" id="w1p-wg-4Lx"/>
+                        <outletCollection property="leftoverBeer" destination="Jmx-je-YIZ" collectionClass="NSMutableArray" id="svo-bs-5QW"/>
+                        <outletCollection property="beerNames" destination="rBH-vP-WSK" collectionClass="NSMutableArray" id="8vH-qN-naL"/>
+                        <outletCollection property="volumeButtons" destination="FfB-tu-D7w" collectionClass="NSMutableArray" id="VIM-PF-ilv"/>
+                        <outletCollection property="volumeButtons" destination="6Fe-8k-mxE" collectionClass="NSMutableArray" id="NIx-kV-qxB"/>
+                        <outletCollection property="volumeButtons" destination="pAD-00-1UB" collectionClass="NSMutableArray" id="Zgv-RX-Aea"/>
+                        <outletCollection property="leftoverBeer" destination="Rpg-6c-78u" collectionClass="NSMutableArray" id="SBi-iD-ekK"/>
+                        <outletCollection property="beerNames" destination="1Fs-kE-GPl" collectionClass="NSMutableArray" id="ww7-rW-2Al"/>
                         <outletCollection property="volumeButtons" destination="5nS-1N-pGn" collectionClass="NSMutableArray" id="Lbo-kl-QOH"/>
+                        <outletCollection property="volumeButtons" destination="Cj9-kC-8Nk" collectionClass="NSMutableArray" id="9wS-Ag-DEz"/>
+                        <outletCollection property="volumeButtons" destination="NDN-8o-Bmg" collectionClass="NSMutableArray" id="RMd-Jy-4LM"/>
                         <outletCollection property="volumeButtons" destination="J6l-Ki-pfs" collectionClass="NSMutableArray" id="Df1-i5-4R7"/>
+                        <outletCollection property="beerNames" destination="Znh-bS-cnc" collectionClass="NSMutableArray" id="bpm-9U-2Ec"/>
+                        <outletCollection property="leftoverBeer" destination="fbc-tI-gWG" collectionClass="NSMutableArray" id="wjD-Mr-DAo"/>
+                        <outletCollection property="volumeButtons" destination="AWr-rx-W1e" collectionClass="NSMutableArray" id="PXc-Jj-OmW"/>
+                        <outletCollection property="volumeButtons" destination="ciy-sC-MOr" collectionClass="NSMutableArray" id="WFY-qP-f5S"/>
+                        <outletCollection property="volumeButtons" destination="ghX-sl-Qsl" collectionClass="NSMutableArray" id="ND7-qm-b3Y"/>
                         <outletCollection property="volumeButtons" destination="PUV-hz-1BR" collectionClass="NSMutableArray" id="hkc-de-VLw"/>
                         <outletCollection property="volumeButtons" destination="Nbi-TG-PMN" collectionClass="NSMutableArray" id="oq1-bO-dQH"/>
-                        <outletCollection property="beerNames" destination="QKw-Dj-uVD" collectionClass="NSMutableArray" id="uVT-mv-jTv"/>
-                        <outletCollection property="beerNames" destination="Znh-bS-cnc" collectionClass="NSMutableArray" id="bpm-9U-2Ec"/>
-                        <outletCollection property="beerNames" destination="1Fs-kE-GPl" collectionClass="NSMutableArray" id="ww7-rW-2Al"/>
-                        <outletCollection property="beerNames" destination="rBH-vP-WSK" collectionClass="NSMutableArray" id="8vH-qN-naL"/>
-                        <outletCollection property="beerNames" destination="fgH-7U-zfE" collectionClass="NSMutableArray" id="LXP-rC-noT"/>
-                        <outletCollection property="leftoverBeer" destination="vK7-HD-Vmw" collectionClass="NSMutableArray" id="uGH-qb-OHI"/>
-                        <outletCollection property="leftoverBeer" destination="fbc-tI-gWG" collectionClass="NSMutableArray" id="wjD-Mr-DAo"/>
-                        <outletCollection property="leftoverBeer" destination="Jmx-je-YIZ" collectionClass="NSMutableArray" id="svo-bs-5QW"/>
-                        <outletCollection property="leftoverBeer" destination="qKU-P2-9Ok" collectionClass="NSMutableArray" id="h6C-MM-S58"/>
-                        <outletCollection property="leftoverBeer" destination="Rpg-6c-78u" collectionClass="NSMutableArray" id="SBi-iD-ekK"/>
+                        <outletCollection property="volumeButtons" destination="Jn2-ZI-8cA" collectionClass="NSMutableArray" id="f6p-0l-b9G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117" y="-273"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lRX-rX-7HA">
+            <objects>
+                <viewController id="Nu3-Uf-GLF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oiW-Qa-NKi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3gv-kH-S96">
+                                <rect key="frame" x="16" y="337" width="393" height="594"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZPc-Kg-a4T"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WrU-lw-OHH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="-273"/>
         </scene>
         <!--Settings-->
         <scene sceneID="507-7T-KWh">
@@ -1047,6 +1183,9 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -10,7 +10,7 @@ import UIKit
 class MenuViewController: UIViewController {
 
     
-    @IBOutlet weak var barName: UILabel!
+//    @IBOutlet weak var barName: UILabel!
     
     @IBOutlet var beerNames: [UILabel]!
     @IBOutlet var leftoverBeer: [UILabel]!
@@ -22,8 +22,10 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        barName.text = "Beer Heaven"
+        title = "Beer Heaven"
+        
+        
+//        barName.text = "Beer Heaven"
         //добавляет всем названия пива по порядку из массива arrayOfAllBeerNames
         for index in 0..<arrayOfAllBeerNames.count {
             beerNames[index].text = arrayOfAllBeerNames[index]

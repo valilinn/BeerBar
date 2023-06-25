@@ -16,6 +16,7 @@
 		EA72A7DB2A41FA7300970169 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA72A7DA2A41FA7300970169 /* SettingsViewController.swift */; };
 		EA72A7DD2A4212B600970169 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA72A7DC2A4212B600970169 /* ModalViewController.swift */; };
 		EA81FFB82A4870CD00C53BD0 /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81FFB72A4870CD00C53BD0 /* BeerModel.swift */; };
+		EA81FFBA2A48915C00C53BD0 /* BeerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81FFB92A48915C00C53BD0 /* BeerDetailsViewController.swift */; };
 		EA8E795B2A472CD500CEE0E1 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8E795A2A472CD500CEE0E1 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		EA72A7DA2A41FA7300970169 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EA72A7DC2A4212B600970169 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		EA81FFB72A4870CD00C53BD0 /* BeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
+		EA81FFB92A48915C00C53BD0 /* BeerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsViewController.swift; sourceTree = "<group>"; };
 		EA8E795A2A472CD500CEE0E1 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +73,7 @@
 				EA81FFB72A4870CD00C53BD0 /* BeerModel.swift */,
 				EA72A7DC2A4212B600970169 /* ModalViewController.swift */,
 				EA8E795A2A472CD500CEE0E1 /* NavigationController.swift */,
+				EA81FFB92A48915C00C53BD0 /* BeerDetailsViewController.swift */,
 				EA4341CF2A3DD40100AAB487 /* Main.storyboard */,
 				EA4341D22A3DD40300AAB487 /* Assets.xcassets */,
 				EA4341D42A3DD40300AAB487 /* LaunchScreen.storyboard */,
@@ -155,6 +158,7 @@
 				EA72A7DD2A4212B600970169 /* ModalViewController.swift in Sources */,
 				EA4341CA2A3DD40100AAB487 /* AppDelegate.swift in Sources */,
 				EA4341CC2A3DD40100AAB487 /* SceneDelegate.swift in Sources */,
+				EA81FFBA2A48915C00C53BD0 /* BeerDetailsViewController.swift in Sources */,
 				EA72A7DB2A41FA7300970169 /* SettingsViewController.swift in Sources */,
 				EA81FFB82A4870CD00C53BD0 /* BeerModel.swift in Sources */,
 			);

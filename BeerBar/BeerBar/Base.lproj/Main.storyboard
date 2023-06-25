@@ -180,10 +180,13 @@
                                                             <constraint firstAttribute="height" constant="30" id="vL3-0v-1un"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nyu-wg-XbV">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nyu-wg-XbV">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <segue destination="Nu3-Uf-GLF" kind="show" id="o1g-ua-wiB"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -253,10 +256,13 @@
                                                             <constraint firstAttribute="height" constant="30" id="tzK-Tu-o9b"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yC-JJ-oeO">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yC-JJ-oeO">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <segue destination="Nu3-Uf-GLF" kind="show" id="vny-Ac-fbV"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -326,10 +332,13 @@
                                                             <constraint firstAttribute="height" constant="30" id="Dep-bq-wgL"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnR-MI-epZ">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnR-MI-epZ">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <segue destination="Nu3-Uf-GLF" kind="show" id="Pab-yW-imf"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -399,10 +408,13 @@
                                                             <constraint firstAttribute="height" constant="30" id="DGN-5w-ycT"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecg-RP-W5s">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecg-RP-W5s">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <segue destination="Nu3-Uf-GLF" kind="show" id="KKJ-3u-gyf"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -472,10 +484,13 @@
                                                             <constraint firstAttribute="height" constant="30" id="jdD-t9-uHZ"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcG-PW-CfH">
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcG-PW-CfH">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <segue destination="Nu3-Uf-GLF" kind="show" id="U50-MD-Asz"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -545,10 +560,13 @@
                                                             <constraint firstAttribute="width" constant="30" id="IHn-fy-pqc"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5s-2S-p11">
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5s-2S-p11">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <segue destination="Nu3-Uf-GLF" kind="show" id="JWC-gi-nEM"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -618,10 +636,13 @@
                                                             <constraint firstAttribute="height" constant="30" id="QxN-TJ-YiE"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDF-I0-ic9">
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDF-I0-ic9">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <segue destination="Nu3-Uf-GLF" kind="show" id="Iad-5X-aRd"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -691,10 +712,13 @@
                                                             <constraint firstAttribute="height" constant="30" id="L7E-29-cfV"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARQ-is-PYc">
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARQ-is-PYc">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <segue destination="Nu3-Uf-GLF" kind="show" id="XuM-LI-Ltf"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -764,10 +788,13 @@
                                                             <constraint firstAttribute="width" constant="30" id="ql0-ur-H9d"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bss-N3-czz">
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bss-N3-czz">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <segue destination="Nu3-Uf-GLF" kind="show" id="yvx-y9-urj"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -837,10 +864,13 @@
                                                             <constraint firstAttribute="width" constant="30" id="hBy-fr-vcX"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iig-gN-OVs">
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iig-gN-OVs">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <segue destination="Nu3-Uf-GLF" kind="show" id="BJS-eP-45h"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -910,10 +940,13 @@
                                                             <constraint firstAttribute="width" constant="30" id="QH8-0o-juM"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZh-ED-nvw">
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZh-ED-nvw">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <segue destination="Nu3-Uf-GLF" kind="show" id="Uuw-uf-zuK"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -983,10 +1016,13 @@
                                                             <constraint firstAttribute="height" constant="30" id="VnW-b1-Bq4"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alz-4a-IyM">
+                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alz-4a-IyM">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <segue destination="Nu3-Uf-GLF" kind="show" id="Iog-4Z-az8"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1056,10 +1092,13 @@
                                                             <constraint firstAttribute="width" constant="30" id="IbF-as-fru"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpd-kz-nMw">
+                                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpd-kz-nMw">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <segue destination="Nu3-Uf-GLF" kind="show" id="A8R-1P-CWK"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1129,10 +1168,13 @@
                                                             <constraint firstAttribute="height" constant="30" id="egj-B6-xvH"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1P-fT-3X3">
+                                                    <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1P-fT-3X3">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <segue destination="Nu3-Uf-GLF" kind="show" id="cAE-s4-AkQ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1181,6 +1223,53 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Menu" image="menucard" catalog="system" id="Jlk-SA-nyn"/>
                     <navigationItem key="navigationItem" title="Beer Heaven" id="x7g-S4-CQF"/>
+                    <connections>
+                        <outletCollection property="beerButtons" destination="0jF-Mf-7UN" collectionClass="NSMutableArray" id="ZcF-fy-EAN"/>
+                        <outletCollection property="beerButtons" destination="Nyu-wg-XbV" collectionClass="NSMutableArray" id="ecR-1S-SAd"/>
+                        <outletCollection property="beerButtons" destination="5yC-JJ-oeO" collectionClass="NSMutableArray" id="FXV-nk-Qjn"/>
+                        <outletCollection property="beerButtons" destination="UnR-MI-epZ" collectionClass="NSMutableArray" id="iam-jy-89w"/>
+                        <outletCollection property="beerButtons" destination="Ecg-RP-W5s" collectionClass="NSMutableArray" id="m7z-vB-CQk"/>
+                        <outletCollection property="beerButtons" destination="RcG-PW-CfH" collectionClass="NSMutableArray" id="kcw-vB-376"/>
+                        <outletCollection property="beerButtons" destination="C5s-2S-p11" collectionClass="NSMutableArray" id="c58-7u-ocs"/>
+                        <outletCollection property="beerButtons" destination="KDF-I0-ic9" collectionClass="NSMutableArray" id="5N1-hY-SfP"/>
+                        <outletCollection property="beerButtons" destination="ARQ-is-PYc" collectionClass="NSMutableArray" id="EXZ-8p-YPs"/>
+                        <outletCollection property="beerButtons" destination="Bss-N3-czz" collectionClass="NSMutableArray" id="cUp-Wb-xfS"/>
+                        <outletCollection property="beerButtons" destination="Iig-gN-OVs" collectionClass="NSMutableArray" id="68o-Lv-MlK"/>
+                        <outletCollection property="beerButtons" destination="ZZh-ED-nvw" collectionClass="NSMutableArray" id="Zi5-Ev-f13"/>
+                        <outletCollection property="beerButtons" destination="alz-4a-IyM" collectionClass="NSMutableArray" id="OWu-DY-0xd"/>
+                        <outletCollection property="beerButtons" destination="rpd-kz-nMw" collectionClass="NSMutableArray" id="bEX-CA-Tsl"/>
+                        <outletCollection property="beerButtons" destination="U1P-fT-3X3" collectionClass="NSMutableArray" id="CG8-ca-BVL"/>
+                        <outletCollection property="beerNames" destination="QKw-Dj-uVD" collectionClass="NSMutableArray" id="hgQ-Ub-QQH"/>
+                        <outletCollection property="beerNames" destination="Dcr-Go-Kba" collectionClass="NSMutableArray" id="lde-99-K8g"/>
+                        <outletCollection property="beerNames" destination="UEb-mp-JnU" collectionClass="NSMutableArray" id="VaD-iy-xL8"/>
+                        <outletCollection property="beerNames" destination="Src-9a-tZE" collectionClass="NSMutableArray" id="sv6-I2-YUG"/>
+                        <outletCollection property="beerNames" destination="qn5-5u-P7m" collectionClass="NSMutableArray" id="6wR-v3-oSa"/>
+                        <outletCollection property="beerNames" destination="dY1-G5-CnN" collectionClass="NSMutableArray" id="3HZ-or-Vca"/>
+                        <outletCollection property="beerNames" destination="s9E-4Z-zGj" collectionClass="NSMutableArray" id="zCA-wH-gJB"/>
+                        <outletCollection property="beerNames" destination="pyL-Gf-AF4" collectionClass="NSMutableArray" id="RJt-OG-zx4"/>
+                        <outletCollection property="beerNames" destination="Gra-8c-7TL" collectionClass="NSMutableArray" id="AEm-7b-aZT"/>
+                        <outletCollection property="beerNames" destination="O0H-mF-LPa" collectionClass="NSMutableArray" id="IeJ-2n-90e"/>
+                        <outletCollection property="beerNames" destination="27w-yU-g5p" collectionClass="NSMutableArray" id="ffY-lm-DDh"/>
+                        <outletCollection property="beerNames" destination="7aP-9Q-7g9" collectionClass="NSMutableArray" id="rJk-gF-ymc"/>
+                        <outletCollection property="beerNames" destination="NFn-Cb-gci" collectionClass="NSMutableArray" id="mNO-lI-ZFS"/>
+                        <outletCollection property="beerNames" destination="lpn-gj-S3Z" collectionClass="NSMutableArray" id="foe-Et-1B6"/>
+                        <outletCollection property="beerNames" destination="d5B-PG-7hi" collectionClass="NSMutableArray" id="GLi-u4-3e3"/>
+                        <outletCollection property="beerVolumes" destination="vK7-HD-Vmw" collectionClass="NSMutableArray" id="Fst-Pi-lvm"/>
+                        <outletCollection property="beerVolumes" destination="TED-pK-yuE" collectionClass="NSMutableArray" id="blS-25-WKR"/>
+                        <outletCollection property="beerVolumes" destination="Dxq-iz-m7b" collectionClass="NSMutableArray" id="7du-TN-Vhy"/>
+                        <outletCollection property="beerVolumes" destination="Gal-cg-NPM" collectionClass="NSMutableArray" id="efL-V6-Nwc"/>
+                        <outletCollection property="beerVolumes" destination="gR2-s6-XL7" collectionClass="NSMutableArray" id="iCX-IF-U5Y"/>
+                        <outletCollection property="beerVolumes" destination="PjQ-NV-fRW" collectionClass="NSMutableArray" id="Z3d-25-9p4"/>
+                        <outletCollection property="beerVolumes" destination="CbX-ng-7m9" collectionClass="NSMutableArray" id="6w8-ey-jm7"/>
+                        <outletCollection property="beerVolumes" destination="8lg-eu-x4S" collectionClass="NSMutableArray" id="x5b-h5-1qm"/>
+                        <outletCollection property="beerVolumes" destination="q0i-jZ-yCK" collectionClass="NSMutableArray" id="UEt-qS-WeV"/>
+                        <outletCollection property="beerVolumes" destination="aIt-dm-hol" collectionClass="NSMutableArray" id="vER-yx-AkK"/>
+                        <outletCollection property="beerVolumes" destination="89r-93-Cnj" collectionClass="NSMutableArray" id="6zE-sf-Epk"/>
+                        <outletCollection property="beerVolumes" destination="GiC-Qx-bkQ" collectionClass="NSMutableArray" id="0UJ-MC-Jq1"/>
+                        <outletCollection property="beerVolumes" destination="ESH-Yy-H1o" collectionClass="NSMutableArray" id="Ci9-So-vLs"/>
+                        <outletCollection property="beerVolumes" destination="VVX-Wi-Hp6" collectionClass="NSMutableArray" id="0Yq-kh-9fo"/>
+                        <outletCollection property="beerVolumes" destination="e2b-pl-GGa" collectionClass="NSMutableArray" id="O1B-OB-E88"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -1484,6 +1573,9 @@
             <point key="canvasLocation" x="105" y="406"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Iad-5X-aRd"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
         <image name="email" width="512" height="383"/>

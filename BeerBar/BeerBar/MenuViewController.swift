@@ -102,19 +102,23 @@ class MenuViewController: UIViewController {
 //        print(beerVolumes.count)
         completeBeers()
 
-        
-        
-//        barName.text = "Beer Heaven"
-        //добавляет всем названия пива по порядку из массива arrayOfAllBeerNames
-//        for index in 0..<arrayOfAllBeerNames.count {
-//            beerNames[index].text = arrayOfAllBeerNames[index]
-//        }
     }
 
+    
+    
     //Выводит номер каждого тега кнопок  beerButtons
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let sender = sender as? UIButton else {return}
-        print(sender.tag)
+        
+        super.prepare(for: segue, sender: sender)
+        
+        guard let sender = sender as? UIButton else { return }
+        
+        let beerIndex = sender.tag
+        guard let destinationController = segue.destination as? BeerDetailsViewController else { return }
+        
+        destinationController.beerIndex = beerIndex
+        destinationController.beer = beers[beerIndex]
+        destinationController.parentController = self
     }
     
 

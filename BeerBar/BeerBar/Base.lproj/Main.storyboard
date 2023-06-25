@@ -8,11 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Menu-->
         <scene sceneID="NRF-Um-Tmz">
             <objects>
                 <navigationController id="lML-mp-dX8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="y7A-ny-qCm"/>
+                    <tabBarItem key="tabBarItem" title="Menu" image="menucard" catalog="system" id="y7A-ny-qCm"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="NrU-EM-c8t">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1307,7 +1307,7 @@
                                             <segment title="1.0 l"/>
                                         </segments>
                                         <connections>
-                                            <action selector="changeVolume:" destination="Nu3-Uf-GLF" eventType="valueChanged" id="RRQ-WM-Dcc"/>
+                                            <action selector="changeVolume:" destination="Nu3-Uf-GLF" eventType="valueChanged" id="TfV-Mb-hJT"/>
                                         </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: 1.5 EUR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIU-60-emD">
@@ -1381,6 +1381,7 @@
                     <connections>
                         <outlet property="beerImage" destination="OPS-bz-wKE" id="3G5-ui-ZJ0"/>
                         <outlet property="beerTypeLabel" destination="1MP-Xo-7al" id="r2Y-on-RPC"/>
+                        <outlet property="buyButton" destination="Yl3-I3-Uym" id="E17-vD-1tb"/>
                         <outlet property="priceLabel" destination="AIU-60-emD" id="y0A-Lr-Mta"/>
                         <outlet property="volumeLabel" destination="1xj-vb-lqv" id="ucJ-UO-T6V"/>
                         <outlet property="volumeSegmentControl" destination="Zat-Zk-2GD" id="R61-9n-0ta"/>

@@ -17,7 +17,7 @@ class MenuViewController: UIViewController {
     @IBOutlet var beerVolumes: [UILabel]!
     
     
-    var beers = [
+    var beers: [Beer] = [
         Beer(name: "Tyskie",
              country: "🇵🇱",
              type: .light,

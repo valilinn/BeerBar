@@ -31,7 +31,7 @@ class BeerDetailsViewController: UIViewController {
                     country: "",
                     type: .light,
                     prices: (0, 0, 0),
-                    volume: 0)
+                    volume: 0, image: UIImage(named: "zywiec")!)
     var beerIndex = 0
     
     
@@ -49,7 +49,7 @@ class BeerDetailsViewController: UIViewController {
     
     private func fillDefaultValues() {
         title = "\(beer.country) \(beer.name)"
-        
+        beerImage.image = beer.image
         switch beer.type {
         case .dark:
             beerTypeLabel.text = "Dark"
@@ -98,14 +98,21 @@ class BeerDetailsViewController: UIViewController {
         default:
             return
         }
-        updateVolume()
+//        updateVolume()
+        checkVolume()
     }
     
     
     @IBAction func buyBeer(_ sender: Any) {
 
         beer.volume -= getCurrentVolume()
+        
+//        if beer.volume <= 0 {
+//            checkVolume()
+//        }
+        
         updateVolume()
+        checkVolume()
         parentController.beers[beerIndex].volume = beer.volume
         parentController.completeBeers()
 

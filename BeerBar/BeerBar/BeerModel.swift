@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Beer {
     let name: String
@@ -13,6 +14,7 @@ struct Beer {
     let type: BeerType
     let prices: (Decimal, Decimal, Decimal)
     var volume: Decimal
+    let image: UIImage
 }
 
 enum BeerType {

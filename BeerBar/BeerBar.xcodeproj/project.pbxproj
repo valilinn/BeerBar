@@ -68,21 +68,53 @@
 		EA4341C82A3DD40100AAB487 /* BeerBar */ = {
 			isa = PBXGroup;
 			children = (
+				EA84403B2A53783F008EF2C0 /* ViewControllers */,
+				EA84403D2A537896008EF2C0 /* Services */,
+				EA84403C2A53787D008EF2C0 /* Models */,
+				EA84403F2A5378F4008EF2C0 /* Resources */,
+				EA8E795A2A472CD500CEE0E1 /* NavigationController.swift */,
+			);
+			path = BeerBar;
+			sourceTree = "<group>";
+		};
+		EA84403B2A53783F008EF2C0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA4341CD2A3DD40100AAB487 /* MenuViewController.swift */,
+				EA81FFB92A48915C00C53BD0 /* BeerDetailsViewController.swift */,
+				EA72A7DA2A41FA7300970169 /* SettingsViewController.swift */,
+				EA72A7DC2A4212B600970169 /* ModalViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EA84403C2A53787D008EF2C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA81FFB72A4870CD00C53BD0 /* BeerModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA84403D2A537896008EF2C0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EA8440392A534A12008EF2C0 /* BarManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EA84403F2A5378F4008EF2C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				EA4341C92A3DD40100AAB487 /* AppDelegate.swift */,
 				EA4341CB2A3DD40100AAB487 /* SceneDelegate.swift */,
-				EA4341CD2A3DD40100AAB487 /* MenuViewController.swift */,
-				EA72A7DA2A41FA7300970169 /* SettingsViewController.swift */,
-				EA81FFB72A4870CD00C53BD0 /* BeerModel.swift */,
-				EA72A7DC2A4212B600970169 /* ModalViewController.swift */,
-				EA8440392A534A12008EF2C0 /* BarManager.swift */,
-				EA8E795A2A472CD500CEE0E1 /* NavigationController.swift */,
-				EA81FFB92A48915C00C53BD0 /* BeerDetailsViewController.swift */,
 				EA4341CF2A3DD40100AAB487 /* Main.storyboard */,
 				EA4341D22A3DD40300AAB487 /* Assets.xcassets */,
 				EA4341D42A3DD40300AAB487 /* LaunchScreen.storyboard */,
 				EA4341D72A3DD40300AAB487 /* Info.plist */,
 			);
-			path = BeerBar;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,7 +345,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3QBZ3X93DR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BeerBar/Info.plist;
+				INFOPLIST_FILE = BeerBar/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -341,7 +373,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3QBZ3X93DR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BeerBar/Info.plist;
+				INFOPLIST_FILE = BeerBar/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

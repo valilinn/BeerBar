@@ -18,8 +18,8 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        zeroButton.setTitle("Reset", for: .normal)
-        zeroButton.setTitle("Second term", for: .selected)
+//        zeroButton.setTitle("Reset", for: .normal)
+//        zeroButton.setTitle("Second term", for: .selected)
         // Do any additional setup after loading the view.
     }
     

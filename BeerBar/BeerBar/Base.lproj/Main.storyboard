@@ -1516,6 +1516,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" id="xgm-DZ-oUh"/>
                     <connections>
+                        <outlet property="todaySalaryLabel" destination="765-sV-zyB" id="zq3-RQ-8CU"/>
+                        <outlet property="totalSalaryLabel" destination="oLN-OM-Xad" id="q4e-us-x9f"/>
                         <outlet property="zeroButton" destination="QQe-LP-qC9" id="Bx1-2y-UKZ"/>
                     </connections>
                 </viewController>

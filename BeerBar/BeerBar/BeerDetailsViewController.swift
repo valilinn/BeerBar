@@ -27,16 +27,7 @@ class BeerDetailsViewController: UIViewController {
     
     var parentController: MenuViewController!
     
-    var beer = Beer(name: "Error",
-                    country: "",
-                    type: .light,
-                    prices: (0, 0, 0),
-                    volume: 0, image: UIImage(named: "zywiec")!)
     var beerIndex = 0
-    
-    
-
-    
     
     
 
@@ -48,27 +39,28 @@ class BeerDetailsViewController: UIViewController {
     }
     
     private func fillDefaultValues() {
-        title = "\(beer.country) \(beer.name)"
-        beerImage.image = beer.image
-        switch beer.type {
+        let currentBeer = BarManager.sharedInstance.beers[beerIndex]
+        title = "\(currentBeer.country) \(currentBeer.name)"
+        beerImage.image = currentBeer.image
+        switch currentBeer.type {
         case .dark:
             beerTypeLabel.text = "Dark"
         case .light:
             beerTypeLabel.text = "Light"
         }
         
-        priceLabel.text = "Price: \(beer.prices.0) EUR"
+        priceLabel.text = "Price: \(currentBeer.prices.0) EUR"
         
         updateVolume()
         checkVolume()
     }
     
     private func updateVolume() {
-        volumeLabel.text = "Leftover beer: \(beer.volume) l"
+        volumeLabel.text = "Leftover beer: \(BarManager.sharedInstance.beers[beerIndex].volume) l"
     }
     
     private func checkVolume() {
-        buyButton.isEnabled = getCurrentVolume() <= beer.volume
+        buyButton.isEnabled = getCurrentVolume() <= BarManager.sharedInstance.beers[beerIndex].volume
         
     }
     
@@ -88,13 +80,16 @@ class BeerDetailsViewController: UIViewController {
     
   
     @IBAction func changeVolume(_ sender: UISegmentedControl) {
+        
+        let prices = BarManager.sharedInstance.pricesForBeer(with: beerIndex)
+        
         switch sender.selectedSegmentIndex {
         case 0:
-            priceLabel.text = "Price: \(beer.prices.0) EUR"
+            priceLabel.text = "Price: \(prices.0) EUR"
         case 1:
-            priceLabel.text = "Price: \(beer.prices.1) EUR"
+            priceLabel.text = "Price: \(prices.1) EUR"
         case 2:
-            priceLabel.text = "Price: \(beer.prices.2) EUR"
+            priceLabel.text = "Price: \(prices.2) EUR"
         default:
             return
         }
@@ -105,7 +100,7 @@ class BeerDetailsViewController: UIViewController {
     
     @IBAction func buyBeer(_ sender: Any) {
 
-        beer.volume -= getCurrentVolume()
+        BarManager.sharedInstance.buyBeer(with: beerIndex, volume: getCurrentVolume())
         
 //        if beer.volume <= 0 {
 //            checkVolume()
@@ -113,7 +108,6 @@ class BeerDetailsViewController: UIViewController {
         
         updateVolume()
         checkVolume()
-        parentController.beers[beerIndex].volume = beer.volume
         parentController.completeBeers()
 
     }

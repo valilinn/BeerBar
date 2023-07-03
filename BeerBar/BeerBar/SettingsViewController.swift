@@ -10,7 +10,11 @@ import UIKit
 class SettingsViewController: UIViewController {
     
     @IBOutlet weak var zeroButton: UIButton!
-
+    
+    @IBOutlet weak var todaySalaryLabel: UILabel!
+    
+    @IBOutlet weak var totalSalaryLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,21 +23,37 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
-    
-    
-    @IBAction func newShiftAction(_ sender: Any) {
-        print("New shift started")
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateSalaries()
+        
     }
     
+    func updateSalaries() {
+        todaySalaryLabel.text =
+        """
+        Revenue today:
+        \(BarManager.sharedInstance.todaySalary)€
+        """
+        
+        totalSalaryLabel.text =
+        """
+        Total revenue:
+        \(BarManager.sharedInstance.totalSalary)€
+        """
+    }
     
+    @IBAction func newShiftAction(_ sender: Any) {
+        BarManager.sharedInstance.totalSalary += BarManager.sharedInstance.todaySalary
+        BarManager.sharedInstance.todaySalary = 0
+        updateSalaries()
+    }
+    
+    //becomeNewConstitution
     @IBAction func newResetAction(_ sender: Any) {
-        zeroButton.isSelected.toggle()
-        if zeroButton.isSelected {
-            print("Reset")
-        } else {
-            print("Second term")
-        }
+        BarManager.sharedInstance.totalSalary = 0
+        BarManager.sharedInstance.todaySalary = 0
+        updateSalaries()
     }
 
     /*

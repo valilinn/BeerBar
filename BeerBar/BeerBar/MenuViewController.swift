@@ -23,11 +23,12 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
         title = "Beer Heaven"
 //        print(beerVolumes.count)
-        completeBeers()
-
     }
 
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        completeBeers()
+    }
     
     //Выводит номер каждого тега кнопок  beerButtons
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -40,7 +41,6 @@ class MenuViewController: UIViewController {
         
         
         destinationController.beerIndex = beerIndex
-        destinationController.parentController = self
     }
     
 

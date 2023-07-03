@@ -44,15 +44,13 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func newShiftAction(_ sender: Any) {
-        BarManager.sharedInstance.totalSalary += BarManager.sharedInstance.todaySalary
-        BarManager.sharedInstance.todaySalary = 0
+        BarManager.sharedInstance.newDay()
         updateSalaries()
     }
     
     //becomeNewConstitution
     @IBAction func newResetAction(_ sender: Any) {
-        BarManager.sharedInstance.totalSalary = 0
-        BarManager.sharedInstance.todaySalary = 0
+        BarManager.sharedInstance.resetAll()
         updateSalaries()
     }
 

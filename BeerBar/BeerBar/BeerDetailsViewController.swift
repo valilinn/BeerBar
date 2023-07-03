@@ -18,14 +18,12 @@ class BeerDetailsViewController: UIViewController {
     
     @IBOutlet weak var priceLabel: UILabel!
     
-    
     @IBOutlet weak var buyButton: UIButton!
     
     @IBOutlet weak var beerImage: UIImageView!
     
     
-    
-    var parentController: MenuViewController!
+
     
     var beerIndex = 0
     
@@ -33,9 +31,11 @@ class BeerDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         fillDefaultValues()
-        
     }
     
     private func fillDefaultValues() {
@@ -49,7 +49,8 @@ class BeerDetailsViewController: UIViewController {
             beerTypeLabel.text = "Light"
         }
         
-        priceLabel.text = "Price: \(currentBeer.prices.0) EUR"
+//        priceLabel.text = "Price: \(currentBeer.prices.0) EUR"
+        changeVolume(volumeSegmentControl)
         
         updateVolume()
         checkVolume()
@@ -108,7 +109,7 @@ class BeerDetailsViewController: UIViewController {
         
         updateVolume()
         checkVolume()
-        parentController.completeBeers()
+        
 
     }
     

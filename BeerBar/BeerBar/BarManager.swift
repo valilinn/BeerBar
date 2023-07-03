@@ -14,7 +14,7 @@ class BarManager {
     
     private init() { }
     
-    var beers: [Beer] = [
+    private let initialBeers: [Beer] = [
         Beer(name: "Tyskie",
              country: "🇵🇱",
              type: .light,
@@ -107,6 +107,8 @@ class BarManager {
              image: UIImage(named: "StellaArtois")!)
     ]
     
+    var beers: [Beer] = []
+    
     var totalSalary: Decimal = 0
     var todaySalary: Decimal = 0
     
@@ -125,6 +127,17 @@ class BarManager {
         default:
             return
         }
-        
     }
+    
+    func newDay() {
+        totalSalary += todaySalary
+        todaySalary = 0
+    }
+    
+    func resetAll() {
+        totalSalary = 0
+        todaySalary = 0
+        beers = initialBeers
+    }
+    
 }

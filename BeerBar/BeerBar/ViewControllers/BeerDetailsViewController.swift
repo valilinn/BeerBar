@@ -36,7 +36,10 @@ class BeerDetailsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         fillDefaultValues()
-        checkVolume() { if $0 == false {self.beerImage.image = UIImage(named: "nobeer")} }
+        checkVolume() { [weak self] noBeer in
+            if noBeer == false {self?.beerImage.image = UIImage(named: "nobeer")}
+            
+        }
     }
     
     private func fillDefaultValues() {
@@ -114,7 +117,10 @@ class BeerDetailsViewController: UIViewController {
 //        }
         
         updateVolume()
-        checkVolume() { if $0 == false {self.beerImage.image = UIImage(named: "nobeertext")} }
+        checkVolume() { [weak self] noBeer in
+            if noBeer == false {self?.beerImage.image = UIImage(named: "nobeertext")}
+            
+        }
         
 
     }

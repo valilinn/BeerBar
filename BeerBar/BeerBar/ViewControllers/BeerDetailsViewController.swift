@@ -36,6 +36,7 @@ class BeerDetailsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         fillDefaultValues()
+        checkVolume() { if $0 == false {self.beerImage.image = UIImage(named: "nobeer")} }
     }
     
     private func fillDefaultValues() {
@@ -60,9 +61,14 @@ class BeerDetailsViewController: UIViewController {
         volumeLabel.text = "Leftover beer: \(BarManager.sharedInstance.beers[beerIndex].volume) l"
     }
     
-    private func checkVolume() {
-        buyButton.isEnabled = getCurrentVolume() <= BarManager.sharedInstance.beers[beerIndex].volume
-        
+    private func checkVolume(noBeerImage: ((Bool) -> ())? = nil) {
+        if getCurrentVolume() <= BarManager.sharedInstance.beers[beerIndex].volume {
+            buyButton.isEnabled = true
+            noBeerImage?(buyButton.isEnabled)
+        } else {
+            buyButton.isEnabled = false
+            noBeerImage?(buyButton.isEnabled)
+        }
     }
     
     private func getCurrentVolume() -> Decimal {
@@ -108,7 +114,7 @@ class BeerDetailsViewController: UIViewController {
 //        }
         
         updateVolume()
-        checkVolume()
+        checkVolume() { if $0 == false {self.beerImage.image = UIImage(named: "nobeertext")} }
         
 
     }

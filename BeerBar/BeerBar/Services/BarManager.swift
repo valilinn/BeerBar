@@ -12,7 +12,10 @@ class BarManager {
     
     public static var sharedInstance = BarManager()
     
+    weak var delegate: BarManagerDelegate?
+    
     private init() { }
+    
     
     private let initialBeers: [Beer] = [
         Beer(name: "Tyskie",
@@ -107,7 +110,11 @@ class BarManager {
              image: UIImage(named: "StellaArtois")!)
     ]
     
-    var beers: [Beer] = []
+    var beers: [Beer] = [] {
+        didSet {
+            delegate?.beersWasUpdated()
+        }
+    }
     
     var totalSalary: Decimal = 0
     var todaySalary: Decimal = 0

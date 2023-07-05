@@ -18,6 +18,7 @@
 		EA81FFB82A4870CD00C53BD0 /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81FFB72A4870CD00C53BD0 /* BeerModel.swift */; };
 		EA81FFBA2A48915C00C53BD0 /* BeerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81FFB92A48915C00C53BD0 /* BeerDetailsViewController.swift */; };
 		EA84403A2A534A12008EF2C0 /* BarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8440392A534A12008EF2C0 /* BarManager.swift */; };
+		EA8440412A54D887008EF2C0 /* BarManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8440402A54D887008EF2C0 /* BarManagerDelegate.swift */; };
 		EA8E795B2A472CD500CEE0E1 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8E795A2A472CD500CEE0E1 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		EA81FFB72A4870CD00C53BD0 /* BeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
 		EA81FFB92A48915C00C53BD0 /* BeerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsViewController.swift; sourceTree = "<group>"; };
 		EA8440392A534A12008EF2C0 /* BarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarManager.swift; sourceTree = "<group>"; };
+		EA8440402A54D887008EF2C0 /* BarManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarManagerDelegate.swift; sourceTree = "<group>"; };
 		EA8E795A2A472CD500CEE0E1 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				EA8440392A534A12008EF2C0 /* BarManager.swift */,
+				EA8440402A54D887008EF2C0 /* BarManagerDelegate.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA8440412A54D887008EF2C0 /* BarManagerDelegate.swift in Sources */,
 				EA4341CE2A3DD40100AAB487 /* MenuViewController.swift in Sources */,
 				EA8E795B2A472CD500CEE0E1 /* NavigationController.swift in Sources */,
 				EA84403A2A534A12008EF2C0 /* BarManager.swift in Sources */,

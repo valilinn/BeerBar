@@ -22,7 +22,6 @@ class BeerDetailsViewController: UIViewController {
     
     @IBOutlet weak var beerImage: UIImageView!
     
-    
 
     
     var beerIndex = 0
@@ -53,7 +52,7 @@ class BeerDetailsViewController: UIViewController {
             beerTypeLabel.text = "Light"
         }
         
-//        priceLabel.text = "Price: \(currentBeer.prices.0) EUR"
+
         changeVolume(volumeSegmentControl)
         
         updateVolume()
@@ -64,17 +63,18 @@ class BeerDetailsViewController: UIViewController {
         volumeLabel.text = "Leftover beer: \(BarManager.sharedInstance.beers[beerIndex].volume) l"
     }
     
-    private func checkVolume(noBeerImage: ((Bool) -> ())? = nil) {
+     func checkVolume(noBeerImage: ((Bool) -> ())? = nil) {
         if getCurrentVolume() <= BarManager.sharedInstance.beers[beerIndex].volume {
             buyButton.isEnabled = true
             noBeerImage?(buyButton.isEnabled)
         } else {
             buyButton.isEnabled = false
             noBeerImage?(buyButton.isEnabled)
+
         }
     }
     
-    private func getCurrentVolume() -> Decimal {
+     func getCurrentVolume() -> Decimal {
         switch volumeSegmentControl.selectedSegmentIndex {
         case 0:
             return 0.33
@@ -103,7 +103,7 @@ class BeerDetailsViewController: UIViewController {
         default:
             return
         }
-//        updateVolume()
+
         checkVolume()
     }
     
@@ -112,9 +112,7 @@ class BeerDetailsViewController: UIViewController {
 
         BarManager.sharedInstance.buyBeer(with: beerIndex, volume: getCurrentVolume())
         
-//        if beer.volume <= 0 {
-//            checkVolume()
-//        }
+
         
         updateVolume()
         checkVolume() { [weak self] noBeer in

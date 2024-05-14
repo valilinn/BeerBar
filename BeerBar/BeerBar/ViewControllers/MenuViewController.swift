@@ -23,7 +23,7 @@ class MenuViewController: UIViewController, BarManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Beer Heaven"
-        print("New branch")
+        print("New new branch")
     }
     
     override func viewWillAppear(_ animated: Bool) {

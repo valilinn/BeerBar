@@ -9,7 +9,7 @@ import UIKit
 
 class MenuViewController: UIViewController, BarManagerDelegate {
    
-
+    var a = 0
     
     @IBOutlet var beerButtons: [UIButton]!
     

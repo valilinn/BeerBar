@@ -29,7 +29,7 @@ class MenuViewController: UIViewController, BarManagerDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         completeBeers()
-        
+        print("oneBranch")
     }
     
     
